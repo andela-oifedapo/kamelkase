@@ -1,0 +1,112 @@
+.logo {
+    display: inline-block;
+}
+
+.nav-links {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    clear: both;
+    font-family: Lato;
+    font-size: 0.68em;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-links li a {
+    color: white;
+    font-weight: bolder;
+}
+
+.nav-links li:hover > a,
+.nav-links li a.active {
+    color: rgb(19, 183, 57);
+}
+
+.about-us-override > ul,
+.about-us-override > p {
+    display: inline-block;
+    width: 45%;
+    padding-left: 30px;
+    /*color: white;*/
+}
+
+.about-us-override > p {
+    display: none;
+}
+
+.about-us-override li {
+    list-style: none;
+}
+
+.about-us-override > ul .link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.about-us-override > ul .link img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 8px solid #ddd;
+}
+
+.about-us-override > ul .link:hover img,
+.about-us-override > ul .link.active img {
+    border-color: rgba(12, 114, 181, 0.7);
+}
+
+.about-us-override > ul .link:hover p,
+.about-us-override > ul .link.active p {
+    color: rgba(12, 114, 181, 0.7);
+}
+
+.link p {
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.about-us-override .paragraph, .smat .paragraph{
+    display: inline-block;
+    font-size: 0.7em;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.smat {
+    text-align: justify;
+}
+
+.smat,
+.contact-us {
+    padding-left: 40px;
+}
+
+.about-us-override,
+.smat,
+.contact-us {
+    margin-top: -220px;
+}
+
+.fade {
+    margin-top: -420px;
+}
+
+.contact-us > div {
+    display: block;
+    font-size: 0.7em;
+}
+
+.contact > div {
+    display: inline-block;
+    width: 45%;
+    padding: 0 auto;
+}
