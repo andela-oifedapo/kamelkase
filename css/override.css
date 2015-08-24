@@ -118,6 +118,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    div.fp-tableCell, .section.fp-section.fp-table{
+        height: auto;
+        max-height: 1200px;
+    }
    header.navi{
         height: auto;
     }
