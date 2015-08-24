@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
@@ -19,7 +20,7 @@
 <body>
     <header class="navi">
         <div class="logo">
-            <a href="index.html"><img src="images/kameKase-logo.png" height="58" width="183" alt="kamelKase-logo" class="logo"></a>
+            <a href="index.html"><img src="images/kameKase-logo.png" alt="kamelKase-logo" class="logo"></a>
         </div>
         <ul class="nav-links">
             <li>
@@ -37,7 +38,7 @@
         </ul>
     </header>
     <div id="fullpage">
-        <div class="section">
+        <div class="section banner">
             <ul class="fade">
                 <li><span>Image 01</span></li>
                 <li><span>Image 02</span></li>
@@ -185,9 +186,11 @@
 <script>
 $(document).ready(function() {
     $('#fullpage').fullpage({
+        fitToSection: false,
         anchors: ['home', 'aboutUs', 'smat', 'contactUs'],
         sectionsColor: ['#7BAABE', '#222', '#e5e5e5', '#222'],
     });
+    
     $('.nav-links li a').click(function() {
         $(this).parent().parent().find('li a').removeClass('active');
         $(this).addClass('active');

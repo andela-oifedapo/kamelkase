@@ -1,3 +1,9 @@
+ div.fp-tableCell{
+    padding: 0 0;
+    display: block;
+}
+
+
 .logo {
     display: inline-block;
 }
@@ -93,11 +99,11 @@
 .about-us-override,
 .smat,
 .contact-us {
-    margin-top: -220px;
+    margin-top: 50px;
 }
 
-.fade {
-    margin-top: -420px;
+.fade li span{
+    top: -200px;
 }
 
 .contact-us > div {
@@ -109,4 +115,48 @@
     display: inline-block;
     width: 45%;
     padding: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+   header.navi{
+        height: auto;
+    }
+    div.logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-links {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 0 0;
+    }
+    .nav-links li{
+        display: block;
+    }
+    .section.banner, .about-us-override ul, .smart-links{
+        display: none;
+    }
+    .about-us-override p.paragraph{
+        display: block;
+        width: 90%;
+    }
+    .smart-text.paragraph{
+        display: block;
+        width: 90%;
+    }
+    .contact div, .contact-us p{
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
 }
