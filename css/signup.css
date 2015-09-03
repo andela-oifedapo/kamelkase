@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(26, 26, 26);
+}
+.navi{
+    background-image: none;
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.signup{
+    display: block;
+    padding: 100px 100px;
+    margin: 0 auto;
+    width: 50%;
+}
+.signup .field{
+    display: block;
+}
