@@ -13,7 +13,7 @@
     float: right;
     margin-right: 10px;
     clear: both;
-    font-family: Lato;
+    font-family: 'Raleway' Lato;
     font-size: 0.68em;
 }
 
@@ -124,6 +124,8 @@
     }
    header.navi{
         height: auto;
+        position: fixed;
+        width: 100%;
     }
     div.logo {
         display: block;
@@ -162,5 +164,8 @@
         display: block;
         text-align: center;
         width: 90%;
+    }
+    .contact, .smat, .about-us-override{
+        margin-top: 200px;
     }
 }

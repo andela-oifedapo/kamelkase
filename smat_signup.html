@@ -2,58 +2,78 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/kameKase-logo.png">
     <link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fadein.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/override.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fadein.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|PT+Sans|Syncopate:700|Open+Sans:800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="/css/override.css">
+    <link rel="stylesheet" href="/css/signup.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="navi">
         <div class="logo">
-            <a href="index.html">SMaT Signup</a>
+            <a href="">SMaT <span class="small">SIGNUP</span></a>
         </div>
     </header>
     <div id="fullpage">
         <div class="signup">
-            <form>
-                <div class="field">password <input type="password"></div>
-                <div class="field">Confirm password <input type="password"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
-                <div class="field">Dummy field <input type="text"></div>
+            <form id="form" method="POST">
+                <section>
+                    <div class="head">
+                        <h5>School Account Details</h5></div>
+                    <div class="field">
+                        <input type="text" name="school" placeholder="School Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" placeholder="Preffered Password" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="School Address" name="address" required>
+                    </div>
+                </section>
+                <section>
+                    <div class="head">
+                        <h5>Applicant Details</h5></div>
+                    <div class="field">
+                        <input type="text" placeholder="First Name" name="first_name">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Last Name" name="last_name">
+                    </div>
+                    <div class="field">
+                        <input type="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Phone Number" name="phone">
+                    </div>
+                </section>
+                <section>
+                    <div class="head">
+                        <h5>Terms and condition</h5></div>
+                    <div class="big-pane">
+                    <!-- t and c here -->
+                    </div>
+                </section>
+                <section>
+                    <input type="checkbox" name="t_and_c" required>I Agree
+                    <div>
+                        <input type="submit" value="Submit" class="submit">
+                    </div>
+                </section>
             </form>
         </div>
         <div class="contact-us">
-            <div class="contact">
-                <div>
-                    <div><i class="fa fa-phone"></i> Call Us:</div>
-                </div>
-                <div style="color:rgba(12, 114, 181, 0.7);">
-                    +234-708-345-5063 &nbsp;&nbsp; +234-805-661-4741
-                </div>
-            </div>
-            <div class="contact">
-                <div>
-                    <i class="fa fa-building"></i> Our Office:
-                </div>
-                <div>
-                    6th Floor, 294 CCHUB building, Herbert Macaulay Way, Sabo, Yaba, Lagos, Nigeria
-                </div>
-            </div>
             <p style="color:rgba(12, 114, 181, 0.7);font-size:0.7em;">&copy; kamelKase 2015</p>
         </div>
     </div>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="/js/signup.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,80 @@
+h5{
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
 body{
-    background-color: rgb(26, 26, 26);
+    /*background-color: rgb(26, 26, 26);*/
+    background-color: white;
+    font-family: 'PT Sans';
 }
 .navi{
     background-image: none;
-    background-color: black;
-    color: white;
-    border-color: black;
+    background-color: white;
+    color: #222;
+    border-color: white;
+    font-family: 'Open Sans';
+    height: 80px;
+    font-size: 40px;
 }
+
+div.logo{
+    min-width: 300px;
+}
+
+.logo a{
+    color: #222;
+    min-width: 200px;
+}
+
+.logo a .small{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
 .signup{
     display: block;
-    padding: 100px 100px;
-    margin: 0 auto;
-    width: 50%;
+    padding: 5px 50px;
+    margin: 50px auto;
+    width: 70%;
+    min-width: 300px;
+    background: #222;
+    border-radius: 5px;
+    color: white;
 }
 .signup .field{
     display: block;
+}
+
+.signup form section .head{
+    border-bottom: 2px #444 solid;
+}
+
+.signup form input:not([type="checkbox"]){
+    height: 30px;
+    min-width: 200px;
+    border-radius: 2px;
+    border: none;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.signup form input.submit{
+    cursor: pointer;
+}
+
+.signup form input.submit:hover{
+    background: #777;
+    color: white;
+}
+
+.big-pane{
+    margin-top: 20px;
+    min-width: 200px;
+    height: 400px;
+    overflow-y:auto;
+    background: white;
+    border-radius: 3px;
+    color: black;
+    padding: 15px 15px;
 }
