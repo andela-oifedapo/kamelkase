@@ -2,66 +2,51 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/kameKase-logo.png">
-    <link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-    <script src="fullPage.js/vendors/jquery.easings.min.js"></script>
-    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-    <script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+    <link rel="icon" href="images/kameKase-favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fadein.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato|Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/override.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="navi">
-        <div class="logo">
-            <a href="index.html"><img src="images/kameKase-logo.png" alt="kamelKase-logo" class="logo"></a>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=""><img src="images/kameKase-logo.png" alt="kamelKase-logo"></a>
         </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#home" class="active">HOME</a>
-            </li>
-            <li>
-                <a href="#aboutUs">ABOUT US</a>
-            </li>
-            <li>
-                <a href="#smat">GET SMaT</a>
-            </li>
-            <li>
-                <a href="#contactUs">CONTACT US</a>
-            </li>
-        </ul>
-    </header>
-    <div id="fullpage">
-        <div class="section banner">
-            <ul class="fade">
-                <li><span>Image 01</span></li>
-                <li><span>Image 02</span></li>
-                <li><span>Image 03</span></li>
-                <li><span>Image 04</span></li>
-                <li><span>Image 05</span></li>
-                <li><span>Image 06</span></li>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about-us" class="transition inlink">About us</a></li>
+                <li><a href="#smat" class="transition inlink">About SMaT</a></li>
+                <li><a href="/smat-signup/" class="transition">Get SMaT</a></li>
             </ul>
         </div>
+    </nav>
+    <div class="container-fluid banner">
+        <div class="row">
+            <img src="images/banner.gif" class="img-responsive">
+        </div>
+    </div>
+    <div class="line"></div>
+    <div>
         <div class="section">
-            <div class="about-us-override">
+            <div class="about-us-override" id="about-us">
+                <h1 class="text-left title">About us</h1>
                 <ul>
                     <li class="link active" data-id="who-we-are">
-                        <img src="images/who-we-are.png">
+                        <img src="images/who-we-are.png" class="transition">
                         <p><b>who we are</b></p>
                     </li>
                     <li class="link" data-id="what-we-do">
-                        <img src="images/what-we-do.png">
+                        <img src="images/what-we-do.png" class="transition">
                         <p><b>what we do</b></p>
                     </li>
                     <li class="link" data-id="our-product">
-                        <img src="images/our-product.png">
+                        <img src="images/our-product.png" class="transition">
                         <p><b>our primary product</b></p>
                     </li>
                 </ul>
@@ -76,9 +61,10 @@
                 </p>
             </div>
         </div>
-        <div class="section">
+        <div class="line"></div>
+        <div class="section" id="smat">
             <div class="smat">
-                <p class="smart-text paragraph"><span class="big-text">SMaT</span> is a software solution for managing and automating academic and administrative processes in primary and secondary schools. Student registration, report generation and everything inbetween is taken care of. SMaT is web based and what this implies for schools that would be implementing it is that there would be almost zero investment cost on infrastructure. All that is needed is a functional computer with internet connection which most schools have already. For the admistrator, running the school becomes easier and more efficient. with this other important things can be focused upon. For the teachers, the work done in preparing reports and monitoring student performance is greatly reduced and output is gotten with even greater speed For parents, keeping an eye on their children's development becomes painless. With SMaT, the school would run more smoothly and all stakeholders get something either in form of speed, increased output, ease, efficiency, or unhindered access to information when, where and how it is most useful. We believe SMaT is a smart way to run your school and we suggest you should <a href="/smat-signup" style="color:rgba(12, 114, 181, 0.7);">try it out.</a></p>
+            <h1 class="text-left title">SMaT</h1>
                 <ul class="smart-links">
                     <li class="flip-container">
                         <div class="flipper">
@@ -141,63 +127,39 @@
                         </div>
                     </li>
                 </ul>
+                <p class="smart-text paragraph">SMaT is a software solution for managing and automating academic and administrative processes in primary and secondary schools. Student registration, report generation and everything inbetween is taken care of. SMaT is web based and what this implies for schools that would be implementing it is that there would be almost zero investment cost on infrastructure. All that is needed is a functional computer with internet connection which most schools have already. For the admistrator, running the school becomes easier and more efficient. with this other important things can be focused upon. For the teachers, the work done in preparing reports and monitoring student performance is greatly reduced and output is gotten with even greater speed For parents, keeping an eye on their children's development becomes painless. With SMaT, the school would run more smoothly and all stakeholders get something either in form of speed, increased output, ease, efficiency, or unhindered access to information when, where and how it is most useful. We believe SMaT is a smart way to run your school and we suggest you should <a href="/smat-signup" style="color:rgba(12, 114, 181, 0.7);">try it out.</a></p>
             </div>
         </div>
+        <div class="line"></div>
         <div class="section">
-            <div class="contact-us">
-                <!--div class="contact">
-                    <div>
-                        CONNECT WITH US
-                    </div>
-                    <div>
-                        <a href="" class="tw"><i class="fa fa-facebook"></i></a>
-                        <a href="" class="tw"><i class="fa fa-twitter"></i></a>
-                        <a href="" class="tw strip-r-margin"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div>
-                        <i class="fa fa-envelope"></i> MAIL US:
-                    </div>
-                    <div>
-                        <p style="color:rgba(12, 114, 181, 0.7);">info@kamelkase.com, help@kamelkase.com</p>
-                    </div>
-                </div-->
-                <div class="contact">
-                    <div>
-                        <div><i class="fa fa-phone"></i> Call Us:</div>
-                    </div>
-                    <div style="color:rgba(12, 114, 181, 0.7);">
-                        +234-708-345-5063 &nbsp;&nbsp; +234-805-661-4741
-                    </div>
-                </div>
-                <div class="contact">
-                    <div>
-                        <i class="fa fa-building"></i> Our Office:
-                    </div>
-                    <div>
-                        6th Floor, 294 CCHUB building, Herbert Macaulay Way, Sabo, Yaba, Lagos, Nigeria
-                    </div>
-                </div>
+            <div class="contact-us text-center">
+                <p style="color:rgba(12, 114, 181, 0.7);">
+                    <i class="fa fa-phone"></i> +234-708-345-5063 &nbsp;&nbsp; +234-805-661-4741
+                </p>
+                <p style="color:rgba(12, 114, 181, 0.7);">
+                    <i class="fa fa-envelope"></i> email@kamelkase.com
+                </p>
                 <p style="color:rgba(12, 114, 181, 0.7);font-size:0.7em;">&copy; kamelKase 2015</p>
             </div>
         </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="fullPage.js/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 <script>
 $(document).ready(function() {
-    isMDWidth = window.innerWidth > 600;
-    $('#fullpage').fullpage({
-        fitToSection: isMDWidth,
-        autoScrolling: isMDWidth,
-        anchors: ['home', 'aboutUs', 'smat', 'contactUs'],
-        sectionsColor: ['#7BAABE', '#222', '#e5e5e5', '#222'],
+    $('.inlink').click(function(e){
+        e.preventDefault();
+        $('.navbar-nav>li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top - 100
+        },400);
     });
-    
-    $('.nav-links li a').click(function() {
-        $(this).parent().parent().find('li a').removeClass('active');
-        $(this).addClass('active');
-    });
+
     $('.about-us-override .paragraph').hide();
     $('#' + $('.about-us-override .active').data('id')).show();
 
@@ -205,7 +167,7 @@ $(document).ready(function() {
         $(this).siblings('li').removeClass('active');
         $(this).addClass('active');
         $('.about-us-override .paragraph').hide();
-        $('#' + $('.about-us-override .active').data('id')).show();
+        $('#' + $('.about-us-override .active').data('id')).fadeIn(300);
     });
 });
 </script>

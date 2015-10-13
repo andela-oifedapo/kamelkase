@@ -266,8 +266,8 @@ display: inline-block;
 }
 
 .smart-links li {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: transparent;
     display: block;
     float: left;
@@ -316,10 +316,11 @@ li.b-border {
 }
 .smart-links a {
     display: block;
-    width: 200px;
-    height: 200px;
-    padding-top: 90px;
+    width: 150px;
+    height: 150px;
+    padding-top: 70px;
     transition: all 1s;
+    float: none;
 }
 
 .big-text {
@@ -365,8 +366,8 @@ ul.fade{
 	}
 
 .flip-container, .front, .back {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 }
 
 /* flip speed goes here */
