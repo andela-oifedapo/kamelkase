@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0.563em 0;
 }
 
@@ -269,8 +269,8 @@ display: inline-block;
     width: 150px;
     height: 150px;
     background-color: transparent;
-    display: block;
-    float: left;
+    display: inline-block;
+    /*float: left;*/
     text-align: center;
     /*border: solid 1px #bbb;
     border-width: 1px 0 0 1px;*/

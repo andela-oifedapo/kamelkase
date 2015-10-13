@@ -1,5 +1,7 @@
 .navbar-default{
     background-color: #0071bb;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 .navbar-brand>img{
@@ -152,9 +154,19 @@
     padding: 0 auto;
 }
 
+.contact-us{
+    width: 100%;
+    padding-left: 0;
+}
+
 @media screen and (max-width: 767px) {
     nav{
         text-align: center;
+    }
+    
+    .navbar-default{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .navbar-header .navbar-brand{
@@ -180,6 +192,7 @@
 
     .smart-text.paragraph{
         display: block;
+        padding-top: 0;
     }
 
     .smat{
